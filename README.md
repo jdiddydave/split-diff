@@ -115,11 +115,13 @@ public function example() {
 }
 ```
 
-Videos are great, but require capturing, user interaction to "play", and don't provide both the before and after simultaneously.
-Screenshots are great as well, but can only be displayed top-to-bottom.
+**Videos**: are great, but require capturing, user interaction to "play", and don't provide both the before and after simultaneously.
+
+**Screenshots**: are great as well, but can only be displayed top-to-bottom.
+
 Both forms of media don't support adding comments after the fact, and both forms clog up your Obsidian Vault with a new individual file per media object.
 
-The diff code block is a much closer solution to the tool I want, but only displays from top-to-bottom; this is great, but is less intuitive (to me) when scanning.
+The **diff code block** is a much closer solution to the tool I want, but only displays from top-to-bottom; this is great, but is less intuitive (to me) when scanning.
 
 Moreover, diff becomes the "language" of the code-block, and there is no way to see the original language's syntax highlighting that you'd want within the code block.
 
