@@ -1,4 +1,4 @@
-# Obsidian Sample Plugin
+<!-- # Obsidian Sample Plugin
 
 This is a sample plugin for Obsidian (https://obsidian.md).
 
@@ -58,7 +58,7 @@ Quick starting guide for new plugin devs:
 - Copy over `main.js`, `styles.css`, `manifest.json` to your vault `VaultFolder/.obsidian/plugins/your-plugin-id/`.
 
 ## Improve code quality with eslint (optional)
-- [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code. 
+- [ESLint](https://eslint.org/) is a tool that analyzes your code to quickly find problems. You can run ESLint against your plugin to find common bugs and ways to improve your code.
 - To use eslint with this project, make sure to install eslint from terminal:
   - `npm install -g eslint`
 - To use eslint to analyze this project use this command:
@@ -93,4 +93,55 @@ If you have multiple URLs, you can also do:
 
 ## API Documentation
 
-See https://github.com/obsidianmd/obsidian-api
+See https://github.com/obsidianmd/obsidian-api -->
+
+# Split Diff
+
+Hello! Welcome to Split Diff. This has virtually no written code yet, and is a simple description of what the project will be.
+
+## Inspiration
+
+In my note-taking, I have always wanted some way of showing the change of code from before to after.
+
+The ways I've tried doing this is in the past are:
+- recording an embedded a video,
+- take screenshots,
+- using `diff` code blocks:
+
+```diff
+public function example() {
+    ++ This is new
+    -- This is old
+}
+```
+
+Videos are great, but require capturing, user interaction to "play", and don't provide both the before and after simultaneously.
+Screenshots are great as well, but can only be displayed top-to-bottom.
+Both forms of media don't support adding comments after the fact, and both forms clog up your Obsidian Vault with a new individual file per media object.
+
+The diff code block is a much closer solution to the tool I want, but only displays from top-to-bottom; this is great, but is less intuitive (to me) when scanning.
+
+Moreover, diff becomes the "language" of the code-block, and there is no way to see the original language's syntax highlighting that you'd want within the code block.
+
+An intuitive code presentation for showing a "before and after" is GitHub's split view--this features shows the code before and after, from left to right.
+
+![A git diff example](./public/photos/git_diff_example.png)
+
+This will be a model of the presentation this feature seeks to provide, with the additional code syntax highlighting for both before and after.
+
+So in essence:
+
+A code diff display that presents two side-by-side code blocks, each retaining its native syntax highlighting, and clearly highlights any differences between them.
+
+## Disclaimer & Acknowledgement:
+This project is an independent work, not officially affiliated with or endorsed by Obsidian.
+Any content, features, or functionality originating from Obsidian should be credited appropriately, and any associated licenses should be observed and followed.
+
+## Potential Issues
+What if the window is too small for Left -> Right comparison?
+- Since it's mostly up to the user and built for desktop, this is somewhat negligable, but having some sort of default action for this situation would be good.
+- Most likely, we would wrap the second code block onto the next line, or return it to a top-bottom diff view.
+
+## Other Ideas
+In the context of taking notes for a course, there are often many iterations from starting to finishing one code block or file.
+It would be cool to have an almost "slideshow" like diff, where a user would be presented with the diff between code_block_version 1 and 2, but be able to navigate on to the diff of 2 to 3, 3 to 4, etc. This is beyond the scope of what this plugin seeks to accomplish, but seems like it would be useful.
