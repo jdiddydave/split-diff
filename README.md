@@ -110,8 +110,8 @@ The ways I've tried doing this is in the past are:
 
 ```diff
 public function example() {
-    ++ This is new
-    -- This is old
+++ This is new
+-- This is old
 }
 ```
 
@@ -135,6 +135,7 @@ A code diff display that presents two side-by-side code blocks, each retaining i
 
 ## Disclaimer & Acknowledgement:
 This project is an independent work, not officially affiliated with or endorsed by Obsidian.
+
 Any content, features, or functionality originating from Obsidian should be credited appropriately, and any associated licenses should be observed and followed.
 
 ## Potential Issues
@@ -144,4 +145,7 @@ What if the window is too small for Left -> Right comparison?
 
 ## Other Ideas
 In the context of taking notes for a course, there are often many iterations from starting to finishing one code block or file.
-It would be cool to have an almost "slideshow" like diff, where a user would be presented with the diff between code_block_version 1 and 2, but be able to navigate on to the diff of 2 to 3, 3 to 4, etc. This is beyond the scope of what this plugin seeks to accomplish, but seems like it would be useful.
+It would be cool to have an almost "slideshow" like diff, where a user would be presented with the diff between code_block_version 1 and 2, but be able to
+navigate on to the diff of 2 to 3, 3 to 4, etc.
+
+This is beyond the scope of what this plugin seeks to accomplish, but seems like it would be useful.
