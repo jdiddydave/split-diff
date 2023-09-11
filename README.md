@@ -104,8 +104,8 @@ Hello! Welcome to Split Diff. This has virtually no written code yet, and is a s
 In my note-taking, I have always wanted some way of showing the change of code from before to after.
 
 The ways I've tried doing this is in the past are:
-- recording an embedded a video,
-- take screenshots,
+- embedding a video,
+- adding screenshots,
 - using `diff` code blocks:
 
 ```diff
