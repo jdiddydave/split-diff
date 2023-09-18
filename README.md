@@ -103,6 +103,10 @@ Hello! Welcome to Split Diff. This has virtually no written code yet, and is a s
 
 ![Current Implementation](./public/photos/current_split_diff_2023_09_17.png)
 
+The code base is a bit of a mess, containing commented out old versions. This version is OK and workable. Simply typing a `split` code block will generate a split table. Enter data just like you would in a `diff` codeblock, and it will present it side by side.
+
+**TODO:**Allow diff'd code to retain its original language + syntax highlighting. Theoretically this would be set by adding it to the backticks like: `split.{lang}`.
+
 ## Inspiration
 
 ### Why did I make this?
@@ -150,7 +154,7 @@ This project is an independent work, not officially affiliated with or endorsed 
 
 Any content, features, or functionality originating from Obsidian should be credited appropriately, and any associated licenses should be observed and followed.
 
-Thanks to Obsidian, obsidian-sample-plugin github repo, my friends and teachers John Drexler and Daniel Coulbourne, the Laravel Community, and ChatGPT
+**Thanks to:** Obsidian, obsidian-sample-plugin github repo, my friends and teachers John Drexler and Daniel Coulbourne, the Laravel Community, and ChatGPT.
 
 ## Potential Issues
 What if the window is too small for Left -> Right comparison?
