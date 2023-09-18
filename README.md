@@ -99,7 +99,13 @@ See https://github.com/obsidianmd/obsidian-api -->
 
 Hello! Welcome to Split Diff. This has virtually no written code yet, and is a simple description of what the project will be.
 
+## Current Implementation
+
+![Current Implementation](./public/photos/current_split_diff_2023_09_17.png)
+
 ## Inspiration
+
+### Why did I make this?
 
 In my note-taking, I have always wanted some way of showing the change of code from before to after.
 
@@ -143,6 +149,8 @@ A code diff display that presents two side-by-side code blocks, each retaining i
 This project is an independent work, not officially affiliated with or endorsed by Obsidian.
 
 Any content, features, or functionality originating from Obsidian should be credited appropriately, and any associated licenses should be observed and followed.
+
+Thanks to Obsidian, obsidian-sample-plugin github repo, my friends and teachers John Drexler and Daniel Coulbourne, the Laravel Community, and ChatGPT
 
 ## Potential Issues
 What if the window is too small for Left -> Right comparison?
