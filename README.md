@@ -149,6 +149,11 @@ So in essence:
 
 A code diff display that presents two side-by-side code blocks, each retaining its native syntax highlighting, and clearly highlights any differences between them.
 
+## Potential Issues
+What if the window is too small for Left -> Right comparison?
+- Since it's mostly up to the user and built for desktop, this is somewhat negligable, but having some sort of default action for this situation would be good.
+- Most likely, we would wrap the second code block onto the next line, or return it to a top-bottom diff view.
+
 ## Disclaimer & Acknowledgement:
 This project is an independent work, not officially affiliated with or endorsed by Obsidian.
 
@@ -156,14 +161,11 @@ Any content, features, or functionality originating from Obsidian should be cred
 
 **Thanks to:** Obsidian, obsidian-sample-plugin github repo, my friends and teachers John Drexler and Daniel Coulbourne, the Laravel Community, and ChatGPT.
 
-## Potential Issues
-What if the window is too small for Left -> Right comparison?
-- Since it's mostly up to the user and built for desktop, this is somewhat negligable, but having some sort of default action for this situation would be good.
-- Most likely, we would wrap the second code block onto the next line, or return it to a top-bottom diff view.
 
+<!--
 ## Other Ideas
 In the context of taking notes for a course, there are often many iterations from starting to finishing one code block or file.
 It would be cool to have an almost "slideshow" like diff, where a user would be presented with the diff between code_block_version 1 and 2, but be able to
 navigate on to the diff of 2 to 3, 3 to 4, etc.
 
-This is beyond the scope of what this plugin seeks to accomplish, but seems like it would be useful.
+This is beyond the scope of what this plugin seeks to accomplish, but seems like it would be useful. -->
