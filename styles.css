@@ -1,8 +1,85 @@
-/*
+/* modal logic */
 
-This CSS file will be included with your plugin, and
-available in the app when your plugin is enabled.
+/* .split-diff-container {
+    display: flex;
+    justify-content: space-between;
+}
 
-If your plugin does not need CSS, delete this file.
+.split-diff-left, .split-diff-right {
+    width: 48%;  // slightly less than half to allow for padding/margin
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    color: black;
+}
 
-*/
+.diff-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); // semi-transparent background
+}
+
+.diff-content {
+    display: flex;
+    background-color: white;
+    width: 80%; // or whatever you like
+    max-height: 80%;
+    overflow: auto;
+    color: black;
+}
+
+.diff-left, .diff-right {
+    width: 50%; // since you want them side by side
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.diff-added {
+    background-color: #e6ffe6;  // Light green background
+    color: black;  // Text color
+    padding: 0.2rem;  // Some padding for aesthetics
+    display: block;  // Makes sure the background color covers the full width
+}
+
+.diff-removed {
+    background-color: #ffe6e6;  // Light red background
+    color: black;
+    padding: 0.2rem;
+    display: block;
+} */
+
+/* split logic */
+
+/* .split-diff-container {
+    background-color: #242424;
+    color: #b3b3b3;
+} */
+
+.diff-left, .diff-right {
+    background-color: #242424;
+    color: #b3b3b3;
+    display: inline-block;
+    width: 48%;
+    vertical-align: top;
+    padding: 5px;
+    border: 1px solid #1e1e1e;
+    box-sizing: border-box;
+}
+
+.diff-left p, .diff-right p {
+    margin: 0.5em 0;
+}
+
+.diff-added {
+    color: green;
+}
+
+.diff-removed {
+    color: red;
+}
