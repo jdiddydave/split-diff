@@ -97,7 +97,7 @@ See https://github.com/obsidianmd/obsidian-api -->
 
 # Split Diff
 
-Hello! Welcome to Split Diff. This has virtually no written code yet, and is a simple description of what the project will be.
+Hello! Welcome to Split Diff. We are still BIG WIP, but have a workable implementation.
 
 ## Current Implementation
 
@@ -106,6 +106,7 @@ Hello! Welcome to Split Diff. This has virtually no written code yet, and is a s
 The code base is a bit of a mess, containing commented out old versions. This version is OK and workable. Simply typing a `split` code block will generate a split table. Enter data just like you would in a `diff` codeblock, and it will present it side by side.
 
 **TODO:** Allow diff'd code to retain its original language + syntax highlighting. Theoretically this would be set by adding it to the backticks like: `split.{lang}`.
+**TODO-2:** Wrap my head around how to offer this in the most convenient way to the Obsidian community.
 
 ## Inspiration
 
